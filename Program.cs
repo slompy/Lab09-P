@@ -102,28 +102,51 @@
 
 
 
-// Вариант 7. 
-for (int a = 1; a <= 5; a++)
+// // Вариант 7. 
+// for (int a = 1; a <= 5; a++)
+// {
+//     Console.WriteLine();
+
+//     for (int b = 1; b <= 5; b++)
+//     {
+//         Console.WriteLine(a + b);
+//     }
+// }
+
+// // Вариант 9
+// Console.WriteLine();
+
+// int num = 5;
+// for (int sum = 1; sum <= 30; sum++)
+// {
+
+//     if (sum == num)
+//     {
+//         num += 5;
+//         continue;
+//     }
+//     Console.WriteLine($"Сумма: {sum}");
+// }
+
+
+// Доп задание
+int days = 0;
+
+
+for (int totalTr = 1; days <= 20; totalTr++)
 {
-    Console.WriteLine();
-
-    for (int b = 1; b <= 5; b++)
+    for (int week = 1; week <= 3; week++)
     {
-        Console.WriteLine(a + b);
+        Console.WriteLine("^_^");
+        for (int day = 1; day <= 7; day++)
+        {
+            days++;
+            if (day == 7)
+            {
+                continue;
+            }
+
+        }
     }
-}
-
-// Вариант 9
-Console.WriteLine();
-
-int num = 5;
-for (int sum = 1; sum <= 30; sum++)
-{
-
-    if (sum == num)
-    {
-        num += 5;
-        continue;
-    }
-    Console.WriteLine($"Сумма: {sum}");
+    Console.WriteLine($"Тренировочных дней {days}");
 }
