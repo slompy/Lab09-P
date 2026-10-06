@@ -42,17 +42,46 @@
 //     break;
 // }
 
-for (; ; )
+// for (; ; )
+// {
+//     Console.Write("Введите код группы (для выхода - 'exit'): ");
+//     string groupCode = Console.ReadLine()!;
+
+//     if (groupCode == "exit")
+//     {
+//         break;
+//     }
+
+//     Console.WriteLine($"Записан код группы: {groupCode}");
+// }
+
+// Console.WriteLine("Работа с журналом завершена");
+
+
+
+
+
+
+// Задача Б
+Console.WriteLine();
+
+for (int numbers = 100; numbers >= 0; numbers -= 10)
 {
-    Console.Write("Введите код группы (для выхода - 'exit'): ");
-    string groupCode = Console.ReadLine()!;
-
-    if (groupCode == "exit")
-    {
-        break;
-    }
-
-    Console.WriteLine($"Записан код группы: {groupCode}");
+    Console.WriteLine($"Числа: {numbers}");
 }
 
-Console.WriteLine("Работа с журналом завершена");
+// Задача В
+Console.WriteLine();
+
+int counts = 1;
+
+for (int nambers = 1; nambers <= 9; nambers++)
+{
+    Console.WriteLine($"Умножения на {counts}:");
+    counts++;
+    for (int nombers = 1; nombers <= 9; nombers++)
+    {
+        Console.WriteLine(nambers * nombers);
+
+    }
+}
