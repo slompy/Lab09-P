@@ -62,26 +62,68 @@
 
 
 
-// Задача Б
-Console.WriteLine();
+// // Задача Б
+// Console.WriteLine();
 
-for (int numbers = 100; numbers >= 0; numbers -= 10)
+// for (int numbers = 100; numbers >= 0; numbers -= 10)
+// {
+//     Console.WriteLine($"Числа: {numbers}");
+// }
+
+// // Задача В
+// Console.WriteLine();
+
+// int counts = 1;
+
+// for (int nambers = 1; nambers <= 9; nambers++)
+// {
+//     Console.WriteLine($"Умножения на {counts}:");
+//     counts++;
+//     for (int nombers = 1; nombers <= 9; nombers++)
+//     {
+//         Console.WriteLine(nambers * nombers);
+
+//     }
+// }
+
+// Console.Write("Введите свою фамилию: "); 
+// string surname = Console.ReadLine()!.Trim(); 
+// if (string.IsNullOrEmpty(surname)) { 
+// Console.WriteLine("Фамилия не введена. Завершение работы."); 
+// return; 
+// } 
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear); 
+// var assigned = Enumerable.Range(1, 10) 
+// .OrderBy(_ => rnd.Next()) 
+// .Take(2) 
+// .OrderBy(x => x) 
+// .ToList();
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}"); 
+
+
+
+// Вариант 7. 
+for (int a = 1; a <= 5; a++)
 {
-    Console.WriteLine($"Числа: {numbers}");
+    Console.WriteLine();
+
+    for (int b = 1; b <= 5; b++)
+    {
+        Console.WriteLine(a + b);
+    }
 }
 
-// Задача В
+// Вариант 9
 Console.WriteLine();
 
-int counts = 1;
-
-for (int nambers = 1; nambers <= 9; nambers++)
+int num = 5;
+for (int sum = 1; sum <= 30; sum++)
 {
-    Console.WriteLine($"Умножения на {counts}:");
-    counts++;
-    for (int nombers = 1; nombers <= 9; nombers++)
-    {
-        Console.WriteLine(nambers * nombers);
 
+    if (sum == num)
+    {
+        num += 5;
+        continue;
     }
+    Console.WriteLine($"Сумма: {sum}");
 }
