@@ -14,30 +14,45 @@
 // }
 
 
-int totalWeeks = 3;
+// int totalWeeks = 3;
 
-for (int week = 1; week <= totalWeeks; week++)
+// for (int week = 1; week <= totalWeeks; week++)
+// {
+//     Console.WriteLine("^_^");
+//     for (int day = 1; day <= 5; day++)
+//     {
+//         Console.WriteLine($"Неделя {week}, день {day}");
+//     }
+// }
+
+// Console.WriteLine();
+
+// int counts = 0;
+
+// for (int ticket = 4; ticket <= 30; ticket++)
+// {
+
+//     if (ticket == 4 || ticket == 12 || ticket == 19)
+//     {
+//         counts++;
+//         continue;
+//     }
+//     Console.WriteLine($"Первый доступный билет: {ticket}");
+//     Console.WriteLine($"Сколько билетов было пропущено: {counts}");
+//     break;
+// }
+
+for (; ; )
 {
-    Console.WriteLine("^_^");
-    for (int day = 1; day <= 5; day++)
+    Console.Write("Введите код группы (для выхода - 'exit'): ");
+    string groupCode = Console.ReadLine()!;
+
+    if (groupCode == "exit")
     {
-        Console.WriteLine($"Неделя {week}, день {day}");
+        break;
     }
+
+    Console.WriteLine($"Записан код группы: {groupCode}");
 }
 
-Console.WriteLine();
-
-int counts = 0;
-
-for (int ticket = 4; ticket <= 30; ticket++)
-{
-
-    if (ticket == 4 || ticket == 12 || ticket == 19)
-    {
-        counts++;
-        continue;
-    }
-    Console.WriteLine($"Первый доступный билет: {ticket}");
-    Console.WriteLine($"Сколько билетов было пропущено: {counts}");
-    break;
-}
+Console.WriteLine("Работа с журналом завершена");
